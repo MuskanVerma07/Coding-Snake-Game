@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto:wght@300&family=Source+Code+Pro:ital,wght@1,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.body{
+    background: url("bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+#scoreBox{
+    position: absolute;
+    top:9px;
+    right: 200px;
+    font-size: 35px ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#board{
+    background: linear-gradient(rgb(168, 200, 207) , rgb(225, 225, 172));
+    width:90vmin;
+    height:92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+.head{
+    
+    background: linear-gradient(rgb(212, 134, 134), rgb(95, 11, 83));
+    border: 2px solid rgb(74, 19, 74);
+    transform: sacle(1.02);
+    border-radius: 9px;
+
+}
+.snake{
+    background-color: purple;
+    border:.25vmin solid white;
+    border-radius: 12px;
+}
+.food{
+    background:linear-gradient(rgb(229, 16, 16),purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+
+    
+}
